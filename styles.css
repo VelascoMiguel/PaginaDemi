@@ -1,0 +1,374 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color : white;
+    color: #333;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x:hidden;
+  }
+
+  button{
+    background-color: white;
+    border:none;
+  }
+
+  body a,p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+  }
+
+  header {
+    display: inline-block;
+    padding: 1em;
+    height: 50px;
+    text-align: left;
+  }
+
+  header h2{
+    color: black;
+
+    font-family: 'Raleway Heavy', sans-serif;
+  }
+
+  header a{
+    margin-right: 1400px;
+  }
+
+  header .hoja{
+    width: 50px;
+    height: 50px;
+  }
+
+  .buscador-header{
+    width: 100%;
+    text-align: right;
+  }
+
+  .buscador-header input{
+    float: right;
+    margin-right: 40px;
+  }
+
+  .lupa{
+    margin-right: 10px;
+    position: static;
+    border: 2px solid white; 
+    float: left;
+  }
+
+  .sub-header{
+    width: 100%;
+  }
+
+  #busqueda{
+    display : none;
+    padding : 0.5em;
+  }
+
+  .search img{
+  width: 30px;
+  height: 30px;
+  }
+
+  main {
+    margin: 0 auto;
+  }
+
+  nav {
+    position: relative;
+    z-index: 9999;
+    text-align: center;
+    width: 1700px;
+    width: 100%;
+    background-color: #f5f0f0;
+    border : 1px solid #d9e2e1;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li{
+    display: inline-block;
+  }
+
+  nav a {
+    color : #333;
+    margin: 0 25px; /* Añade un margen horizontal a los elementos "a" */
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .options-sub-header1{
+    display:none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+ .options-sub-header1 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .options-sub-header1 li{
+    display: block;
+  }
+
+  .slider {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin-left: 500px;
+    margin-top: 20px;
+  }
+  .slides {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  .slide {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .slide.active {
+    opacity: 1;
+  }
+  .slider img {
+    border:1px solid #d9e2e1;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    width: 900px;
+    height: 400px;
+  }
+  .arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  .arrow {
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    visibility: hidden;
+    margin-top: 380px;
+  }
+  .arrow:hover {
+    opacity: 1;
+  }
+  .prev {
+    margin-left: 10px;
+  }
+  .next {
+    margin-right: 10px;
+  }
+  
+  .aside-section{
+        position: relative;
+        float: right;
+        width: 12%;
+        margin-right: 110px;
+        border: 1px solid #d9e2e1;
+        background-color:  #fff;
+        border-radius: 10px;
+        padding : 20px;
+  }
+
+  .aside-section a{
+    text-decoration: none;
+  }
+
+
+  .div-seeds{
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #d9e2e1;
+    padding : 10px;
+  }
+
+  .picture-bsf{
+    width: 150px;
+    height: 130px;
+    transition: transform 0.3s ease-out;
+  }
+
+  .picture-bsf:hover{
+    transform: scale(1.05);
+  }
+
+  .seeds-image{
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    transition: transform 0.3s ease-out;
+  }
+
+  .seeds-image:hover{
+    transform: scale(1.2);
+  }
+
+  .button-seeds{
+    padding: 10px 20px;
+    background-color: #428bca;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .month-following ol{
+        list-style-type: disc;
+  }
+
+  .info {
+    margin-top: 450px;
+    text-align: left;
+    width: 900px;
+    margin-left: 500px;
+  }
+  
+  .info h2 {
+    font-size: 1.5em;
+  }
+  
+  .info p {
+    margin-top: 1em;
+  }
+  
+  .myButton{
+    width:200px;
+    height: 120px;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #428bca;
+    color: #fff;
+    cursor: pointer;
+    border-radius:15px;
+    cursor:pointer;
+    font-family:Trebuchet MS;
+    font-size:20px;
+    font-weight:bold;
+    padding:12px 14px;
+    text-decoration:none;
+  }
+
+  .myButton a{
+    color : #fff;
+  }
+
+  .myButton:hover {
+    background:linear-gradient(to bottom, rgba(148,187,233,1) 5%, rgba(148,187,233,1) 100%);
+    background-color:#d9e2e1;
+  }
+
+  .myButton2{
+    width:210px;
+    height: 120px;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #428bca;
+    color: #fff;
+    cursor: pointer;
+    border-radius:15px;
+    cursor:pointer;
+    font-family:Trebuchet MS;
+    font-size:20px;
+    font-weight:bold;
+    padding:12px 14px;
+    text-decoration:none;
+  }
+
+  .myButton2 a{
+    color : #fff;
+  }
+
+  .myButton2:hover {
+    background:linear-gradient(to bottom, rgba(148,187,233,1) 5%, rgba(148,187,233,1) 100%);
+    background-color:#d9e2e1;
+  }
+  .myButton2:active {
+    position:relative;
+    top:1px;
+  }  
+
+  .section-crop img{
+    border:1px solid #d9e2e1;
+    margin-left: 100px;
+    width:550px;
+    height:300px ;
+    border-radius: 10px;
+  }
+
+  .questions-grow{
+    text-align: left;
+    width: 900px;
+  }
+
+  .questions-grow img{
+    width:450px;
+    height:338px;
+    margin-left: 100px;
+  }
+
+  .how-to-grow-cannabis-in-indoor{
+    text-decoration: underline;
+  }
+
+  .costs-growing{
+    width:900px;
+    text-align: left;
+    margin-left: 500px;
+  }
+
+  .costs-growing a {
+    text-decoration: underline;
+  }
+
+  .get-seeds{
+    width:900px;
+    text-align: left;
+    margin-left: 500px;
+  }
+
+  .get-seeds a{
+    text-decoration: underline;
+  }
+
+  .get-seeds img{
+    margin-left: 100px;
+  }
+
+  footer{
+    padding: 20px;
+    background-color: grey;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  footer nav{
+    background-color: grey;
+    border:none;
+  }

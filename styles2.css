@@ -1,0 +1,266 @@
+.chat h3{
+  text-align: center;
+}
+
+.chat {
+  background-image: url(FOTOS/fondowpp.jpg);
+  position:absolute;
+  display: inline-block;
+  width: 350px;
+  height: 320px;
+  background-color: #f4f4f4;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  
+}
+
+.chat header{
+  border-radius: 15px;
+}
+
+.chat h3 {  
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 70px;
+  padding : 10px;
+  color : rgb(114, 113, 113);
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.chat ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chat li {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.chat li:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.chat .message {
+  margin-top: 40px;
+  background-color: #fff;
+  border-color: #dcdcdc;
+  color: #333;
+}
+
+.chat .message:before {
+  left: -10px;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.chat .message.sent {
+  margin-top: 40px;
+  background-color: #dcf8c6;
+  border-color: #c3e6a7;
+  color: #333;
+}
+
+.chat .message.sent:before {
+  right: -10px;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #dcf8c6;
+}
+
+.chat .message-content {
+  font-size: 16px;
+  line-height: 1.5;
+  max-width:
+  80%;
+}
+
+.chat .message-content2 {
+  text-align: right;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width:
+  80%;
+}
+
+.chat .message-content2 p{
+  padding:0;
+  margin-left: 30px;
+}
+
+
+.chat .message-timestamp {
+font-size: 14px;
+font-weight: bold;
+color: #fff;
+position: absolute;
+bottom: -18px;
+right: 5px;
+}
+.chat form {
+display: flex;
+margin-top: 30px;
+}
+.chat input[type="text"] {
+flex: 1;
+border-radius: 20px;
+border: none;
+padding: 10px;
+font-size: 16px;
+margin-right: 10px;
+}
+.chat button[type="submit"] {
+  background-color: #dcf8c6;
+color: #fff;
+border: none;
+border-radius: 20px;
+padding: 10px 15px;
+font-size: 16px;
+cursor: pointer;
+transition: background-color 0.5s ease-in-out;
+}
+.chat button[type="submit"]:hover {
+background-color: #ffffff;
+}
+.chat .fa-paper-plane img{
+  width: 20px;
+  height: 20px;
+}
+
+.section-electricity{
+    width:900px;
+    text-align: left;
+    margin-left: 500px;
+}
+
+.section-electricity a{
+    text-decoration: underline;
+}
+
+.marihuana-yields{
+    width:900px;
+    text-align: left;
+    margin-left: 500px;
+}
+
+.marihuana-yields a{
+    text-decoration: underline;
+}
+
+.marihuana-yields img{
+    width:450px;
+    height:370px;
+    margin-left: 100px;
+}
+
+.grow-privately{
+    width:900px;
+    text-align: left;
+    margin-left: 500px;
+}
+
+.grow-privately a{
+    text-decoration: underline;
+}
+
+.get-sick{
+    width:900px;
+    text-align: left;
+    margin-left: 500px;
+}
+
+.get-sick button{
+  width:200px;
+  height: 120px;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #428bca;
+  color: #fff;
+  cursor: pointer;
+  border-radius:15px;
+  cursor:pointer;
+  font-family:Trebuchet MS;
+  font-size:20px;
+  font-weight:bold;
+  padding:12px 14px;
+  text-decoration:none;
+}
+
+.get-sick button a{
+  color : #fff;
+}
+
+.get-sick button:hover {
+    background:linear-gradient(to bottom, rgba(148,187,233,1) 5%, rgba(148,187,233,1) 100%);
+    background-color:#d9e2e1;
+  }
+
+.get-sick button:active {
+    position:relative;
+    top:1px;
+  }  
+
+.growing-medical{
+    width:900px;
+    text-align: left;
+    margin-left: 500px;
+}
+
+.newsletter2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .newsletter2 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter2 p {
+    margin-bottom: 20px;
+  }
+  
+  .newsletter2 form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .newsletter2 label {
+    margin-bottom: 10px;
+  }
+  
+  .newsletter2 input[type="email"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .newsletter2 button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #428bca;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .newsletter2 button[type="submit"]:hover {
+    background-color: #3071a9;
+  }
+  

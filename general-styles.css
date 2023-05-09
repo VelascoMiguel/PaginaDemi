@@ -1,0 +1,59 @@
+/* Estilos generales */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    }
+    
+    button {
+    cursor: pointer;
+    }
+    
+    /* Estilos específicos de la página */
+    
+    body {
+    background-color: white;
+    color: #333;
+    }
+    
+    header {
+    background-color:#fff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    }
+    
+    .logo img {
+    height: 50px;
+    }
+  
+    .categories a {
+    color: #333;
+    text-decoration: none;
+    }
+    
+    .newsletter button[type="submit"] {
+      color:black;
+      background-color: white;
+    }
+  
+    a{
+      text-decoration: none;
+      color : black;
+    }
+
+    .general-info a{
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .general-info h2,h3{
+      text-align: center;
+    }
+
+    .general-info img{
+      width: 700px;
+      height: 350px;
+      border:1px solid black;
+      border-radius: 15px;
+    }
