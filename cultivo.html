@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cultivo de Marihuana</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="general-styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <header>
+      <img class="hoja" src="hojamariaa.png">
+      <h2>Cultivo de <br>Marihuana</h2><a>[ cultivo + aprendizaje ]<br>[ www.cultivodemarihuana.com ]</a>
+  </header> 
+    <div class="sub-header">
+      <nav class="first-list">
+        <ul>
+          <li><a href="cultivodemarihuana.html">Inicio</a></li>
+          <li><a href="Redirecciones/Comenzar Aca/comienza-aqui.html">Comenzar aquí</a></li>
+          <li><a href="#productos">Problemas y síntomas</a></li>
+          <li><a href="tutoriales.html">Tutoriales</a></li>
+          <li><a href="acerca.html">Acerca del crecimiento</a></li>
+          <li><a href="semillas.html">Semillas</a></li>
+          <li><a href="https://www.youtube.com/">Mapa de cultivadores</a></li>
+        </ul>
+      </nav>
+    </div>
+      <div class="slider">
+        <div class="slides">
+          <img src="FOTOS/wedd.png" class="slide">
+          <img src="FOTOS/weed2.png" class="slide">
+          <img src="FOTOS/weed3.png" class="slide">
+        </div>
+        <div class="arrows">
+          <span class="arrow prev">&lt;</span>
+          <span class="arrow next">&gt;</span>
+        </div>
+      </div>
+    <script src="scriptslider.js"></script>
+
+      <aside class="chat">
+        <header>
+          <h3 class="title-chat"><b>Chat Cannabico</b></h3>
+        </header>
+        <ul id="chat-messages">
+          <li class="message">
+            <div class="message-content">
+              <a>Hola, ¿cómo estás?</a>
+            </div>
+            <div class="message-timestamp">
+              10:15 AM
+            </div>
+          </li>
+          <li class="message sent">
+            <div class="message-content2">
+              <a>Bien, gracias. ¿Y tú?</a>
+            </div>
+            <div class="message-timestamp">
+              10:16 AM
+            </div>
+          </li>
+          <ul class="messages" id="chat-messages">
+            <!-- Existing messages go here -->
+          </ul>
+          <!-- Aquí se agregarán más mensajes dinámicamente con JavaScript -->
+        </ul>
+        <form class="message-form">
+          <input type="text" id="message-input" placeholder="Escribe aquí tu mensaje...">
+          <button type="submit">
+            <i class="fa fa-paper-plane"><img src="FOTOS/plane.png"></i>
+          </button>
+        </form>
+      </aside>
+      <script src="chat.js"></script>
+
+    <div class="aside-container">
+        <aside class="aside-section">
+            <b>Nuevos Blogs e Informacion !</b>
+            <p>Adquiri esos tips para empezar a cultivar hoy </p>
+            <section class="newsletter2">
+              <h3>Newsletter</h3>
+              <p>Suscríbete para recibir nuestras últimas noticias y ofertas especiales.</p>
+              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+              <form id="my-form" method="POST" action="newsletter.php">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su mail..." required>
+                <button type="submit">Suscribirse</button>
+                <script src="scriptphp.js"></script>
+              </form>              
+              <script>
+                // Espera a que el formulario se envíe
+                $('#my-form').submit(function(event) {
+                  // Detiene el envío normal del formulario
+                  event.preventDefault();
+              
+                  // Envía la solicitud del formulario por Ajax al archivo PHP
+                  $.ajax({
+                    type: 'POST',
+                    url: 'newsletter.php',
+                    data: $(this).serialize(), // Envía los datos del formulario
+                    success: function(response) {
+                      console.log(response); // Muestra la respuesta del archivo PHP en la consola
+                      $('input[type="email"]').val('');
+                    },
+                    error: function(xhr, status, error) {
+                      console.log(xhr.responseText); // Muestra el mensaje de error en la consola
+                    }
+                  });
+                  alert("¡Gracias por suscribirte!");
+                });
+              </script>
+            </section>
+          <br><aside class="div-seeds">
+                <b>Es seguro comprar semillas por internet ? </b><br>   
+                <img class="picture-bsf" src="FOTOS/seedsrm.png" class="seeds-image">
+               <br><img src="FOTOS/seeds2.png" class="seeds-image">
+                <br><br><button class="button-seeds">Ver proveedores</button>
+            </aside>
+            <div class="month-following">
+                <br><br><b>Abril</b>
+                <ol>
+                    <li><a href=""> ¿Cómo cultivar pequeñas plantas de cannabis en espacios diminutos? </a></li><br>
+                    <li><a href=""> ¿Dónde puedo encontrar la cepa "Gorilla Glue"? </a></li><br>
+                    <li><a href=""> El auge de las variedades de cannabis autoflorecientes </a></li><br>
+                    <li><a href=""> Los 7 "mitos" más comunes sobre el cultivo </a></li><br>
+                    <li><a href=""> ¿Cómo hago florecer una planta de marihuana? </a></li>
+                </ol>
+                <br><b>Mayo</b>
+                <ol>
+                    <li><a href=""> ¿Cómo cultivar pequeñas plantas de cannabis en espacios diminutos? </a></li><br>
+                    <li><a href=""> ¿Dónde puedo encontrar la cepa "Gorilla Glue"? </a></li><br>
+                    <li><a href=""> El auge de las variedades de cannabis autoflorecientes </a></li><br>
+                    <li><a href=""> Los 7 "mitos" más comunes sobre el cultivo </a></li><br>
+                    <li><a href=""> ¿Cómo hago florecer una planta de marihuana? </a></li><br>
+                </ol>
+            </div>
+        </aside>
+    </div>
+    <div class="general-info">
+      <div class="info">
+        <h2>Todos los tutoriales para tu cultivo aca ! </h2>
+        <p>La marihuana se está legalizando cada vez más en más lugares a medida que las personas descubren que no causa mucho daño, tiene beneficios médicos reales y es un pasatiempo divertido 
+          que es más seguro que beber alcohol. Sin embargo, incluso para aquellos que pueden cultivar marihuana legalmente, no hay muchos recursos simples que expliquen de principio a fin lo que 
+          se necesita hacer. La marihuana es en realidad una planta muy fácil de cultivar en su mayor parte, pero puede parecer imposible de cultivar si no sabes qué obtener o cómo empezar.
+          Los tutoriales de cultivo de cannabis en interiores en CultivoDeMarihuana.com son nuestro intento de responder a todas sus preguntas de manera clara y concisa para que pueda saltarse la 
+          lectura y pasar directamente al cultivo.</p><br>
+         <h3><b>Cultivo De Marihuana - Aprende como empezar a cultivar</b></h3>
+         <a><b>CultivoDeMarihuana.com te enseña lo fácil que es cultivar cannabis. ¡Aprende como!</b> Cultivar marihuana puede ser fácil, aunque la mayoría de los tutoriales de "cómo cultivar marihuana" 
+          hacen que parezca que necesitas un título en horticultura. ¡Todo el proceso es realmente sencillo y sorprendentemente simple cuando sabes lo que tienes que hacer!</a><br><br>
+          <div class="container-button">
+            <button class="myButton"><a href="">Sos principiante ? Empeza por aca !</a></button>
+            <button class="myButton2"><a href="">Problemas en la planta<br>Resolve todo aca !</a></button>
+            <button class="myButton2"><a href="">Entrenamiento de la planta</a></button>
+            <button class="myButton2" ><a href="">Mapa de Cultivador <br>(Tu paso a paso)</a></button>
+          </div>
+          <div class="section-crop">
+            <p>Cultivo De Marihuana.com te mostrará lo fácil que es <b>cultivar tu propia marihuana</b> en casa, con el menor tiempo y esfuerzo posible. Si deseas comenzar a cultivar cannabis en interiores por 
+              primera vez, o si ya eres un cultivador profesional y deseas mejorar tus habilidades actuales de cultivo de cannabis, ¡este sitio web es para ti!</p>
+              <img src="FOTOS/cosechacannabis2.jpg">
+          </div>
+          <div class="questions-grow">
+            <p>Es posible que te estés haciendo estas preguntas comunes :</p>
+            <h3>"¿Como cultivo marihuana en Indoor?"</h3>
+            <a>Para eso, lee este articulo : <a href="" class="how-to-grow-cannabis-in-indoor">Como cultivar marihuana en indoor</a></a>
+            <br><br><img src="FOTOS/germinacion-cannabis.jpg">
+          </div>
+      </div>
+          <div class="costs-growing">
+            <h3>"¿Cuanto cuesta aproximadamente arrancar a cultivar?"</h3>
+            <p>Si estás considerando cultivar marihuana, puede costar tan poco como <a href="">$300 USD para comenzar a cultivar</a>, o un poco más para un sistema de cultivo semiautomático de hidroponia de alto rendimiento.</p>  
+            <p>Mira ejemplos de <a href="">rendimientos esperados, consumo de electricidad y costos iniciales</a> para diferentes configuraciones.</p>
+            <p>Lee este artículo para <a>ver aún más estilos de cultivo con diferentes rangos de precios.</a></p>
+          </div>
+          <div class="get-seeds">
+            <br><h3>"¿Donde puedo conseguir semillas de cannabis?"</h3>
+            <p>Echa un vistazo a nuestra Guía de <a href="">Cómo Comprar Semillas de Marihuana en Línea</a> (con entrega en todas las provincias de Argentina) para obtener genéticas de calidad de manera segura.
+            ¡Comenzar con buenas semillas te permite elegir la apariencia, el olor y los efectos de tus cogollos!</p>
+            <p>Aprende sobre las mejores <a href="">cepas de marihuana para principiantes</a> y <a href="">cómo investigar y encontrar la cepa adecuada.</a></p>
+            <img src="FOTOS/coquitos.jpg">
+          </div>
+          <div class="section-electricity">
+            <h3>"¿Cuanta electricidad me costara cada mes?"</h3>
+            <p>Si solamente estas cultivando algunas plantas de cannabis para uso personal, esto te costara unos $2000 - $3000 ARS+/Mes de electricidad, dependiendo de que tipos de luces utilices. De media podriamos decir que
+              una persona que cultiva por hobby, pagara aproximadamente $2500 ARS pero depende de tu equipo de cultivo y del costo de la electricidad local.</p>
+            <a href="">"¿Cuanto me costara la electricidad cada mes?</a>
+          </div>
+          <div class="marihuana-yields">
+            <h3>“¿Cómo puedo aumentar mis rendimientos de marihuana?”</h3>
+            <p>¡Tenemos bastantes técnicas para elegir o combinar! Mira algunas de nuestras páginas más populares:</p>
+            <ul>
+              <li><a href="">Cropping</a></li>
+              <li><a href="">La guía más sencilla para cultivar plantas de marihuana bajas y tupidas</a></li>
+              <li><a href="">LST (Low Stress Training)</a></li>
+              <li><a href="">O echa un vistazo a nuestra página sobre la controvertida técnica de defoliación</a></li>
+            </ul>
+            <p>De hecho, hay mas maneras de aumentar la produccion : </p>
+            <ol>
+              <li><a href="">Aumente la intensidad de la luz (además, elija la luz adecuada para los rendimientos deseados y posiblemente agregue CO2)</a></li>
+              <li><a href="">Manipular cómo crecen las plantas (una forma gratuita de producir más cogollos en interiores)</a></li>
+              <li><a href="">Controle el entorno de cultivo (deje que el entorno de cultivo trabaje para usted)</a></li>
+              <li><a href="">Coseche las plantas correctamente (lo más importante, ¡no coseche temprano!)</a></li>
+              <li><a href="">Proporcione los nutrientes correctos (bajo nivel de nitrógeno en la etapa de floración, y recuerde que a veces ¡menos es más!)</a></li>
+              <li><a href=""> Por último, ¡es importante recordar que la cepa tiene un efecto importante en los rendimientos!</a></li>
+            </ol>
+            <img src="FOTOS/lst.jpg">
+          </div>
+          <div class="grow-privately">
+            <h3>"¿Como puedo cultivar cannabis de manera legal?"</h3>
+            <p>Lee nuestra guia del paso a paso para <a href="">habilitar tu permiso de REPROCANN</a></p>
+          </div>
+          <div class="get-sick">
+            <br><h3>"¿Que pasa si mis plantas se enferman?"</h3>
+            <p>El problema más común al que se enfrenta un cultivador es el desequilibrio de pH. Si descartamos eso, es probable que tus plantas de marihuana tengan deficiencia de nutrientes, 
+              estrés por calor o luz, o estén siendo atacadas por algún tipo de moho, plaga o insecto de la marihuana.</p>
+              <button class="button-sick"><a href="">Problemas de Plantas</a></button>
+            <br><p>Ya sea que lo llames hierba, cannabis, sinsemilla, skunk, marihuana, o de alguna otra manera, la planta conocida como Cannabis Sativa es una hierba resistente en la 
+              naturaleza y en realidad puede ser fácil de cultivar en interiores en casa cuando sabes qué hacer.</p>
+          </div>
+          <div class="growing-medical"> 
+            <h3>Cultivando Marihuana Medicinal</h3>
+            <p>"La marihuana medicinal" se ha convertido en un término muy común. El cuerpo de evidencia en favor de la marihuana medicinal en el tratamiento del cáncer y otras enfermedades está 
+              creciendo cada día.</p>
+            <p>Y para aquellos que necesitan marihuana medicinal, cultivar hierba en interiores es la manera perfecta de garantizar un suministro regular y seguro de cogollos, a un precio económico.
+                De hecho, cuando cultivas marihuana en interiores para uso personal, a menudo terminas con mucho más de lo que necesitas.
+               </p>
+            <p>Si te contagiaste del bichito del cultivo como me pasó a mí, y si empezaste a disfrutar el proceso de cuidar tu jardín de cannabis solo por el hecho de cultivar, tendrás que encontrar 
+              una manera de prensar, cocinar, congelar y concentrar todos tus cogollos extras. 🙂
+               </p>
+            <p>Como probablemente sabes, tanto la marihuana medicinal como el cannabis recreativo han sido despenalizados o legalizados en muchos lugares alrededor del mundo, ¡y cada día son más los 
+                lugares donde se está legalizando!
+               </p>
+            <p>Sin embargo, todavía no hay muchas guías simples para principiantes sobre cómo cultivar marihuana en interiores (incluso para aquellos que cultivan legalmente, como los usuarios de 
+                marihuana medicinal y aquellos que viven en lugares donde la marihuana está legalizada para uso personal).
+              </p>
+            <p>Si es así, entiendo cómo te sientes. Puede ser difícil filtrar toda la información errónea en Internet y encontrar consejos o instrucciones bien investigados y gratuitos sobre cómo 
+              cultivar tu propia marihuana. 
+              </p>  
+            <p>Por eso, CultivoDeMarihuana.com tiene como objetivo ser un recurso en línea simple que explica paso a paso lo que necesitas hacer cuando cultivas cannabis para que puedas aprender a cultivar 
+              cannabis con grandes rendimientos y cogollos potentes, incluso si solo tienes un pequeño espacio de cultivo como un armario o incluso una carcasa de computadora. Hemos cultivado cannabis 
+              en armarios y hemos obtenido onzas de cogollos, ¡y tú también puedes hacerlo!
+              </p>
+            <p>CultivoDeMarihuana.com cubre muchos temas populares acerca del cannabis y sus trabas del cultivo</p>
+            <div>
+              <ul>
+                <li>Una comparación entre diferentes <a href="">luces de cultivo de cannabis</a>, incluyendo información basada en experiencias sobre <a href="">luces de cultivo LED.</a></li>
+                <li>Una página que te enseña los conceptos <a href="">básicos de cómo cultivar marihuana.</a></li>
+                <li>Tutoriales detallados sobre <a href="">cómo cultivar marihuana.</a></li>
+                <li><a href="">Cómo empezar a cultivar marihuana mañana</a> (¡la guía más simple de cultivo de cannabis!)</li>
+                <li><a href="">Cómo cultivar 4-7 onzas con una luz HPS de 250W</a> (La manera más recomendada para comenzar a cultivar.)</li>
+                <li>Nuestra famosa guía de cultivo que te enseña <a href="">cómo cultivar marihuana utilizando bubbleponics (hidroponía).</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2>Empeza a cultivar hoy!</h2>
+              <p>Cultivo De Marihuana es administrado por un panel de cultivadores experimentados de cannabis, quienes se unieron originalmente
+                 para crear CultivoDeMarihuana.com</p>
+              <p>Toda la información disponible en CultivoDeMarihuana.com es completamente gratuita y actualizamos regularmente el sitio y agregamos nuevas secciones.</p>
+              <h4>Feliz Cultivo !</h4>
+            </div>
+          </div>
+    </div>
+        <script src="script.js">
+        </script>
+          </main>
+        </body>
+        <footer>
+          <div class="nav-footer">
+             <nav>
+              <a>Actualizaciones Recientes</a>
+              <a>Acerca de nosotros</a>
+              <a>Politica de privacidad</a>
+              <a>Newsletter / Email Politicas</a>
+              <a>Contactanos !</a>
+            </nav>
+            <h3>Copyright © 2022 - 2023. All rights reserved</h3>
+          </div>
+        </footer>
+        </html>
